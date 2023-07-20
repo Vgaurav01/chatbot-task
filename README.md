@@ -1,30 +1,31 @@
 # chatbot-task
 
-Your task is to implement a simple **python function**. We designed it so it could be completed in less than 1-2 hours.
+Your assignment is to create a simple Python function. We've designed this task to be achievable within 1-2 hours.
 
-## Task
-The function takes in one a single text string and returns another text string: 
+## Task Description
+You are to implement a function that accepts a single text string as input and returns another text string as output:
 
 ```python
 def answer_question(user_question: str) -> str:
    # Your solution here
 ```
 
-This function represents a "backend" for a chatbot for retail investors.
+This function will serve as the "backend" for a chatbot designed for retail investors.
 
-To make it the task as easy as possible, user query will always come with certain guarantees:
-- The question will always be about **one** single company.
-   - The company is guaranteed to be mentioned in the query and exist in the dataset.
-- The question will always be about a single specific full fiscal year (i.e. only `fiscal_period=FY`, no questions about quarters).
-   - The year is guaranteed to be mentioned in the query and exist in the dataset.
-- The topic of any user question guaranteed will be one of only these five (i.e. user will never ask about any other topic):
+To simplify the task, the user query will always adhere to the following conditions:
+
+- The question will always pertain to a single company.
+  - The company will be explicitly mentioned in the query and is guaranteed to be present in the dataset.
+- The question will always relate to a specific full fiscal year (i.e., only fiscal_period=FY, no questions about quarters).
+   - The year will be explicitly mentioned in the query and is guaranteed to be present in the dataset.
+- The subject of the user's question will always be one of the following five topics (i.e., the user will never ask about any other topic):
    - Total Revenue
    - Net Income / (Loss) Attributable to Common Shareholders
    - Price to Earnings (P/E)
    - Dividend Yield
    - Return on Equity (ROE).
  
-## Example questions and answers
+## Example Questions and Answers
 
 - **Question:** How much did walmart generate in sales in 2021?
    - **Answer:** In 2021, Walmart Inc generated $XXX billion in sales.
@@ -46,12 +47,13 @@ To make it the task as easy as possible, user query will always come with certai
    - **Answer:** In 2021, Apple Inc generated a return of XX.XX% on its shareholders' equity.
    - Note: Corresponding information is *Return on Equity (ROE)*
   
-## Software design
+## Guidelines for Software Design
 
-- We recommend using the OpenAI ChatGPT API (be careful to not include your API key in the code).
-- Your solution should be put in public (or private, if you like) Github repository.
-- Do not modify the CSV files (and do not directly modify the data files, i.e. your program should always read the original files).
-- You do not necessarily have to put all of your code inside the function, you can put some code outside of it as well.
-   - In that case, consider using Python *Class* and *Method* instead of a *Function*.
-- Feel free to develop in Jupyter notebooks, if you want.
-   - It would be great if you included a Jupyter notebook to demonstrate any exploration you do.
+- We recommend using the OpenAI ChatGPT API. Please ensure not to include your API key in the code.
+   - You are welcome to utilize any helpful libraries, such as Microsoft Guidance, LMQL, LangChain, or others. However, sending direct prompts to the OpenAI API is also perfectly acceptable.
+- Please place your solution in a public or private Github repository, as per your preference.
+- Refrain from modifying the CSV files. Also, do not directly alter the data files; your program should always read the original files.
+- It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well.
+   - In such cases, consider using Python Class and Method instead of a Function.
+- Feel free to develop in Jupyter notebooks, if you prefer.
+   - It would be beneficial if you included a Jupyter notebook to demonstrate any exploratory work you undertake.
