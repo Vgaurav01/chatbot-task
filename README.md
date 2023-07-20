@@ -1,6 +1,6 @@
 # chatbot-task
 
-Your task is to create a simple **python function**. We designed it so it could be completed in less than 1-2 hours.
+Your task is to implement a simple **python function**. We designed it so it could be completed in less than 1-2 hours.
 
 ## Task
 The function takes in one a single text string and returns another text string: 
