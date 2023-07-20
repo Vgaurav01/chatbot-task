@@ -50,7 +50,7 @@ To simplify the task, the user query will always adhere to the following conditi
 ## Guidelines for Software Design
 
 - We recommend using the OpenAI ChatGPT API. Please ensure not to include your API key in the code.
-   - You are welcome to utilize any helpful libraries, such as Microsoft Guidance, LMQL, guardrails, LangChain, or others. However, sending direct prompts to the OpenAI API is also perfectly acceptable.
+   - You are welcome to utilize any helpful libraries, such as [LMQL](https://lmql.ai/), [Microsoft Guidance](https://github.com/microsoft/guidance), [guardrails](https://shreyar.github.io/guardrails), [LangChain](https://python.langchain.com/docs/get_started/introduction.html), or others. However, sending direct prompts to the OpenAI API is also perfectly acceptable.
 - Please place your solution in a public or private Github repository, as per your preference.
 - Refrain from modifying the CSV files. Also, do not directly alter the data files; your program should always read the original files.
 - It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well.
