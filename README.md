@@ -3,7 +3,7 @@
 Your task is to create a simple **python function**. We designed it so it could be completed in less than 1-2 hours.
 
 ## Task
-that would take in one text string and return another text string: 
+The function takes in one a single text string and returns another text string: 
 
 ```python
 def answer_question(user_question: str) -> str:
