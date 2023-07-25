@@ -12,20 +12,22 @@ def answer_question(user_question: str) -> str:
 
 This function will serve as the "backend" for a chatbot designed for retail investors.
 
-To simplify the task, the user query will always adhere to the following conditions:
+To simplify the task, the user query will **always** adhere to the following conditions:
 
-- The question will always pertain to a single company.
+- The question will always pertain to a **single** company.
   - The company will be explicitly mentioned in the query and is guaranteed to be present in the dataset.
 - The question will always relate to a specific full fiscal year (i.e., only fiscal_period=FY, no questions about quarters).
    - The year will be explicitly mentioned in the query and is guaranteed to be present in the dataset.
 - The subject of the user's question will always be one of the following five topics (i.e., the user will never ask about any other topic):
-   - Total Revenue
-   - Net Income / (Loss) Attributable to Common Shareholders
-   - Price to Earnings (P/E)
-   - Dividend Yield
-   - Return on Equity (ROE).
+   - `Total Revenue`
+   - `Net Income / (Loss) Attributable to Common Shareholders`
+   - `Price to Earnings (P/E)`
+   - `Dividend Yield`
+   - `Return on Equity (ROE)`
  
 ## Example Questions and Answers
+
+Notice that keyword search will not work, for example "revenue" is not mentioned in the question that seeks an answer about revenue. Consider allowing your program to use ChatGPT to assist with the control flow.
 
 - **Question:** How much did walmart generate in sales in 2021?
    - **Answer:** In 2021, Walmart Inc generated $XXX billion in sales.
@@ -51,9 +53,9 @@ To simplify the task, the user query will always adhere to the following conditi
 
 - We recommend using the OpenAI API. Please ensure not to include your API key in the code.
    - You are welcome to utilize any helpful libraries, such as [Marvin](https://www.askmarvin.ai/), [LMQL](https://lmql.ai/), [Microsoft Guidance](https://github.com/microsoft/guidance), [guardrails](https://shreyar.github.io/guardrails), [LangChain](https://python.langchain.com/docs/get_started/introduction.html), or others. However, using the OpenAI API directly is also perfectly acceptable.
-- Please place your solution in a public or private Github repository, as per your preference.
-- Refrain from modifying the CSV files. Also, do not directly alter the data files; your program should always read the original files.
-- It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well.
-   - In such cases, consider using Python Class and Method instead of a Function.
+- Please place your solution in a public or private Github repository, as per your preference. Don't copy paste your code in chat.
+- Don't modify the CSV files. Your program should always read the original files.
+- Don't copy-paste the data from CSV to a data structure in your source code. Your program should always read the original files.
+- It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well, for example by using Python classes and methods.
 - Feel free to develop in Jupyter notebooks, if you prefer.
    - It would be beneficial if you included a Jupyter notebook to demonstrate any exploratory work you undertake.
