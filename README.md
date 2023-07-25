@@ -58,6 +58,7 @@ Notice that keyword search will not work, for example "revenue" is not mentioned
 - Please place your solution in a public or private Github repository, as per your preference. We would expect to find one (or multiple) `.py` or `.ipynb` files with your source code in it. Don't copy-paste your code to chat applications.
 - Don't modify the CSV files. Your program should read the original CSV files and process them, don't use something like Excel to manually edit the data in the CSV files.
 - Don't copy-paste the data from CSV to a data structure in your source code. Your program should read the original CSV files and process them, don't manually search for the data yourself.
+- Use only the CSV files as the source of truth, don't depend on OpenAI API or the any other sources for the factual information.
 - It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well, for example by using Python classes and methods.
 - Feel free to develop in Jupyter notebooks, if you prefer.
    - It would be beneficial if you included a Jupyter notebook to demonstrate any exploratory work you undertake.
