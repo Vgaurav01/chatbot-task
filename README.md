@@ -25,6 +25,11 @@ To simplify the task, the user query will **always** adhere to the following con
    - `Price to Earnings (P/E)`
    - `Dividend Yield`
    - `Return on Equity (ROE)`
+
+In other words:
+   - the question always contains one four digit number XXXX, that's the full fiscal year
+   - the question always explicitly names one and only specific company (for example "walmart" for Walmart Inc.)
+   - the question always searches for a single factual number about one of the five available for each company (for example "In 2022, how much was the dollar value of goods sold by walmart?", refers to "Total Revenue")
  
 ## Example Questions and Answers
 
