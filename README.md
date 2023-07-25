@@ -12,24 +12,19 @@ def answer_question(user_question: str) -> str:
 
 This function will serve as the "backend" for a chatbot designed for retail investors.
 
-To simplify the task, the user query will **always** adhere to the following conditions (no need to check for errors):
+To simplify the task, the user question will **always** adhere to the following conditions (no need to check for errors):
 
-- The question will always pertain to a **single** company.
-  - The company will be explicitly mentioned in the query (e.g. `cocacola`) and is guaranteed to be present in the dataset.
-- The question will always relate to a specific full fiscal year (i.e., only `fiscal_period == "FY"`, no questions about quarters, etc.).
-   - The year will be explicitly mentioned in the query as the only four digit number in the query.
+- The question always explicitly names exactly one specific company (for example "walmart" for Walmart Inc.)
+   - Information about this company is guaranteed to be present in the dataset.
+- The question always has a single four digit number XXXX, that's the full fiscal year related to the question
+   - In other words, filter for only `fiscal_period == "FY"`, no questions about quarters, etc.
    - Information about this year is guaranteed to be present in the dataset.
-- The subject of the user's question will always be one of the following five topics (i.e., the user will never ask about any other topic):
+- The user always asks for a single factual **quantity** about one of the five available for each company (for example question "In 2022, how much was the dollar value of goods sold by walmart?", refers to "Total Revenue"). Each of the numbers is directly available in one of the CSVs. The user will never ask about anything else. THe five quantities are:
    - `Total Revenue`
    - `Net Income / (Loss) Attributable to Common Shareholders`
    - `Price to Earnings (P/E)`
    - `Dividend Yield`
    - `Return on Equity (ROE)`
-
-In other words:
-   - the question always contains one four digit number XXXX, that's the full fiscal year
-   - the question always explicitly names exactly specific company (for example "walmart" for Walmart Inc.)
-   - the question always searches for a single factual number about one of the five available for each company (for example "In 2022, how much was the dollar value of goods sold by walmart?", refers to "Total Revenue")
  
 ## Example Questions and Answers
 
