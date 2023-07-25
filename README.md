@@ -28,7 +28,7 @@ To simplify the task, the user query will **always** adhere to the following con
  
 ## Example Questions and Answers
 
-Notice that keyword search will not work, for example "revenue" is not mentioned in the question that seeks an answer about revenue. Consider allowing your program to use ChatGPT to assist with the control flow.
+Notice that keyword search will not work, for example "revenue" is not mentioned in the question that seeks an answer about revenue. Consider allowing your program to use OpenAI API (ChatGPT) to assist with the control flow.
 
 - **Question:** How much did walmart generate in sales in 2021?
    - **Answer:** In 2021, Walmart Inc generated $XXX billion in sales.
