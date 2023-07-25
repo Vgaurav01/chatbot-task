@@ -56,8 +56,8 @@ Notice that keyword search will not work, for example "revenue" is not mentioned
 - We recommend using the [OpenAI API](https://platform.openai.com/docs/quickstart). Please ensure not to include your API key in the code.
    - You are welcome to utilize any helpful libraries, such as [Marvin](https://www.askmarvin.ai/), [LMQL](https://lmql.ai/), [Microsoft Guidance](https://github.com/microsoft/guidance), [guardrails](https://shreyar.github.io/guardrails), [LangChain](https://python.langchain.com/docs/get_started/introduction.html), or others. However, using the OpenAI API directly is also perfectly acceptable.
 - Please place your solution in a public or private Github repository, as per your preference. Don't copy paste your code in chat.
-- Don't modify the CSV files. Your program should always read the original files and process them.
-- Don't copy-paste the data from CSV to a data structure in your source code. Your program should always read the original files and process them.
+- Don't modify the CSV files. Your program should always read the original files and process them, don't use Excel or the like to manually edit the data in the source file.
+- Don't copy-paste the data from CSV to a data structure in your source code. Your program should read the original files and process them, don't manually search for the data yourself.
 - It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well, for example by using Python classes and methods.
 - Feel free to develop in Jupyter notebooks, if you prefer.
    - It would be beneficial if you included a Jupyter notebook to demonstrate any exploratory work you undertake.
