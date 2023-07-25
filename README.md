@@ -19,12 +19,15 @@ To simplify the task, the user question will **always** adhere to the following 
 - The question always has a single four digit number XXXX, that's the full fiscal year related to the question
    - In other words, filter for only `fiscal_period == "FY"`, as there will be no questions about quarters, etc.
    - Information about this year is guaranteed to be present in the dataset.
-- The user always asks for a single factual **quantity** about one of the five available for each company (for example question "In 2022, how much was the dollar value of goods sold by walmart?", refers to "Total Revenue"). Each of the numbers is directly available in one of the CSVs. The user will never ask about anything else. THe five quantities are:
-   - `Total Revenue`
-   - `Net Income / (Loss) Attributable to Common Shareholders`
-   - `Price to Earnings (P/E)`
-   - `Dividend Yield`
-   - `Return on Equity (ROE)`
+- The user always asks for one out of five factual **quantities** of a single company for a single year.
+   - For example question `In 2022, how much was the dollar value of goods sold by walmart?`, refers to `Total Revenue`.
+   - All of the quantities are directly available in the CSV data files. The user will never ask about anything else.
+   - The five quantities are:
+      - `Total Revenue`
+      - `Net Income / (Loss) Attributable to Common Shareholders`
+      - `Price to Earnings (P/E)`
+      - `Dividend Yield`
+      - `Return on Equity (ROE)`
  
 ## Example Questions and Answers
 
