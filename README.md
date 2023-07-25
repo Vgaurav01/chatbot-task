@@ -16,7 +16,7 @@ To simplify the task, the user query will **always** adhere to the following con
 
 - The question will always pertain to a **single** company.
   - The company will be explicitly mentioned in the query (e.g. `cocacola`) and is guaranteed to be present in the dataset.
-- The question will always relate to a specific full fiscal year (i.e., only `fiscal_period = FY`, no questions about quarters, etc.).
+- The question will always relate to a specific full fiscal year (i.e., only `fiscal_period = "FY"`, no questions about quarters, etc.).
    - The year will be explicitly mentioned in the query as the only four digit number in the query.
    - Information about this year is guaranteed to be present in the dataset.
 - The subject of the user's question will always be one of the following five topics (i.e., the user will never ask about any other topic):
