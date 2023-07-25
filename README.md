@@ -17,7 +17,7 @@ To simplify the task, the user question will **always** adhere to the following 
 - The question always explicitly names exactly one specific company (for example "walmart" for Walmart Inc.)
    - Information about this company is guaranteed to be present in the dataset.
 - The question always has a single four digit number XXXX, that's the full fiscal year related to the question
-   - In other words, filter for only `fiscal_period == "FY"`, no questions about quarters, etc.
+   - In other words, filter for only `fiscal_period == "FY"`, as there will be no questions about quarters, etc.
    - Information about this year is guaranteed to be present in the dataset.
 - The user always asks for a single factual **quantity** about one of the five available for each company (for example question "In 2022, how much was the dollar value of goods sold by walmart?", refers to "Total Revenue"). Each of the numbers is directly available in one of the CSVs. The user will never ask about anything else. THe five quantities are:
    - `Total Revenue`
