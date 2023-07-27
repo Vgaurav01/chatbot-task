@@ -65,3 +65,4 @@ Notice that keyword search will not work, for example "revenue" is not mentioned
 - It's not mandatory to encapsulate all of your code within a function; you can place some code outside of it as well, for example by using Python classes and methods.
 - Feel free to develop in Jupyter notebooks, if you prefer.
    - It would be beneficial if you included a Jupyter notebook to demonstrate any exploratory work you undertake.
+- **BONUS POINTS**. Let's send only send **one** (final) quantity to ChatGPT (instead of just including the multiple values from CSV, or the CSV itself), by doing all the data filtering in pandas. This may require multiple LLM prompts to be sent.
