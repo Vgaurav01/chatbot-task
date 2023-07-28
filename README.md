@@ -68,7 +68,7 @@ Notice that keyword search will not work, for example "revenue" is not mentioned
 
 ## Bonus points!
 If you can it would be great if you could achieve this as well:
-- Instead of sending multiple values or parts of the CSV file contents to ChatGPT, send only the final result.
-- Use pandas to handle all data filtering from the CSV files.
-- To determine the values for filtering, seek guidance from the ChatGPT.
-- Answering each question may necessitate at least two prompts to the ChatGPT: one before the data filtering and another after.
+- Instead of sending multiple values or parts of the CSV file contents to [ChatGPT](https://platform.openai.com/docs/guides/gpt/chat-completions-api), send only the final result.
+- Use [Pandas](https://pandas.pydata.org/) to handle all data filtering from the CSV files.
+- To determine the values for filtering, seek guidance from the [ChatGPT](https://platform.openai.com/docs/guides/gpt/chat-completions-api).
+- Answering each question may necessitate at least two prompts to the [ChatGPT](https://platform.openai.com/docs/guides/gpt/chat-completions-api): one before the data filtering and another after.
