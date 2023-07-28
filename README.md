@@ -1,6 +1,6 @@
 # chatbot-task
 
-Your assignment is to create a simple Python function. We've designed this task to be achievable within 1-2 hours.
+Your assignment is to create a simple Python function. While we designed this task to be achievable within 1-2 hours, remember everyone progresses at their own pace. So take the time you need and don't hesitate to reach out if you have any questions or need guidance. We're here to help!
 
 ## Task Description
 You are to implement a function that accepts a single text string as input and returns another text string as output:
