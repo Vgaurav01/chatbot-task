@@ -1,0 +1,39 @@
+def answer_question(user_question: str) -> str:
+# Assuming financial_data is a dictionary containing financial information
+# Extracting relevant information from the user's question
+# (company, year, and topic)
+company = "CompanyXYZ" # Placeholder for extracting the company name from the question
+year = "2023" # Placeholder for extracting the fiscal year from the question
+topic = "Total Revenue" # Placeholder for extracting the topic from the question
+
+# Assuming financial_data is a dictionary containing financial information
+# for different companies and fiscal years
+financial_data = {
+("CompanyXYZ", "2023"): {
+"Total Revenue": "$10,000,000",
+"Net Income": "$2,500,000",
+"P/E": "15.2",
+"Dividend Yield": "2.5%",
+"ROE": "18%",
+},
+# Additional data for other companies and years...
+}
+
+# Retrieving the relevant financial information for the specified company and year
+data = financial_data.get((company, year))
+if data is None:
+return "Sorry, the financial data for the specified company and year is not available."
+
+# Handling different topics and returning the corresponding information
+if topic == "Total Revenue":
+return f"The total revenue for {company} in {year} was {data['Total Revenue']}."
+elif topic == "Net Income":
+return f"The net income for {company} in {year} was {data['Net Income']}."
+elif topic == "P/E":
+return f"The Price to Earnings (P/E) ratio for {company} in {year} was {data['P/E']}."
+elif topic == "Dividend Yield":
+return f"The dividend yield for {company} in {year} was {data['Dividend Yield']}."
+elif topic == "ROE":
+return f"The Return on Equity (ROE) for {company} in {year} was {data['ROE']}."
+
+return "Sorry, the specified topic is not supported."m
