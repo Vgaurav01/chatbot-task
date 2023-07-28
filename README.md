@@ -68,4 +68,7 @@ Notice that keyword search will not work, for example "revenue" is not mentioned
 
 ## Bonus points!
 If you can it would be great if you could achieve this as well:
-- Let's send only send **one** (final) quantity to ChatGPT (instead of just including the multiple values from the CSV, or sending (parts of) CSV file contents), by doing all the data filtering in pandas. Let LLMs help you choose the values by which to filter the CSVs in pandas. This may require at least two LLM prompts to be sent to answer each question (one before filtering and one after).
+- Instead of sending multiple values or parts of the CSV file contents to ChatGPT, send only the final result.
+- Use pandas to handle all data filtering from the CSV files.
+- To determine the values for filtering, seek guidance from the LLMs.
+- Answering each question may necessitate at least two prompts to the LLM: one before the data filtering and another after.
